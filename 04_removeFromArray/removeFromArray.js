@@ -1,8 +1,7 @@
-const removeFromArray = function(array,...arguments) {
-    let converted = arguments;
+const removeFromArray = function(array,...stuffs) {
     let filteredArray= array.filter(function(item){
-        for(let i = 0; i < converted.length; i++){
-            if(item === converted[i]){
+        for(let i = 0; i < stuffs.length; i++){
+            if(item === stuffs[i]){
                 return false;
             }
         }
